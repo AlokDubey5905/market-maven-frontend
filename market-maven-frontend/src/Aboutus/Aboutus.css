@@ -1,0 +1,169 @@
+
+
+.about-container {
+    width: 100%;
+    background-color: #292c33;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.landing-content {
+    text-align: center;
+}
+
+.landing-content img {
+    width: 100vw;
+    height: 60vh;
+    max-height: 60%;
+}
+
+.landing-content p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.arrow-down {
+    font-size: 24px;
+    margin-top: 32px;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    color: white;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #292c33;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+
+.get-started-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.about-text {
+    max-width: 900px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.about-text h2{font-size: 2.5rem;}
+
+.about-text p {
+    font-size: 20px;
+}
+
+.team-section {
+    padding: 40px;
+    color: white;
+    background-color: #292c33;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    max-width: 250px;
+    text-align: center;
+    margin: 20px;
+    border: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    transition-delay: 0s;
+}
+
+.team-member-img {
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+}
+
+.team-member:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition-delay: 0.1s;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .landing-content h1 {
+        font-size: 24px;
+    }
+
+    .landing-content p {
+        font-size: 16px;
+    }
+
+    .landing-content img {
+        max-height: 50%;
+    }
+
+    .get-started-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .team-member {
+        max-width: 180px;
+    }
+}

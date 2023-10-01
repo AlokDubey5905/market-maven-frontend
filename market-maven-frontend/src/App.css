@@ -1,0 +1,204 @@
+/* Base styles */
+.App {
+  text-align: center;
+  background-color: #292C33;
+  width: 100%;
+
+}
+
+.hero-section {
+  background-image: url('/src/assets/backgrnd.png');
+  width: 100%;
+  margin-top: -113px;
+  height: 709.866px;
+  background-repeat: no-repeat;
+}
+
+/* Common styles for text elements */
+.text-common {
+  font-size: 2cm;
+}
+
+/* Timed text */
+.timed-text {
+  color: #ffffff;
+  font-size: 2cm;
+  position: relative;
+  font-weight:700;
+  margin-top:-.1cm;
+  top: 3cm; /* Move the timed text 3 cm down */
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+/* Non-timed text */
+.nonTimed-text {
+  color: rgb(9, 9, 9);
+  font-size: 2cm;
+  font-weight:700;
+  font-family: 'Open Sans', sans-serif;
+
+  position: relative;
+  top: 3cm; /* Move the non-timed text 3 cm down */
+}
+.body-search-bar:focus-within {
+  border: 2px solid #aaa;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+/* Heading text */
+.heading-text {
+  margin-top: 3cm;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens up to 768px width */
+
+/* Body Search Bar */
+.body-search-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 32px;
+  border: 1px solid var(--neutral-grey-disabled, #BBBCBC);
+  background: var(--neutral-white-field, #F2F2F2);
+  padding: 4px 8px;
+  width: 45%;
+  cursor: text;
+  transition: box-shadow 0.2s ease;
+  margin: 5.5cm 11cm;
+}
+
+.body-search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 11px;
+  background-color: transparent;
+}
+
+.body-search-bar i {
+  margin-left: 8px;
+  margin-right: 1rem;
+  color: #26890D;
+  cursor: pointer;
+  z-index: 5;
+}
+
+/* Dropdown Card */
+.body-dropdown-backdrop {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.body-dropdown-backdrop.show {
+  display: block;
+}
+
+.body-dropdown-card {
+  position: absolute;
+  bottom:194px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  width: 780px;
+  max-height: 650px;
+  overflow-y: auto;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.body-dropdown-card.show {
+  display: block;
+}
+/* ... (previous CSS rules) */
+
+.body-scrollable-dropdown {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  padding: 10px;
+  height: 100%; /* Ensure the card takes full height */
+  margin-bottom: 10px; /* Add space between the cards */
+}
+
+.body-stock-info {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    justify-content: space-between;
+/* Set position to relative for positioning the ::after pseudo-element */
+}
+
+.body-stock-details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 2cm;
+}
+
+.stock-details p {
+  margin: 0;
+  font-size: 14px;
+}
+/* ... (remaining CSS rules) */
+
+
+.body-scrollable-dropdown .no-results-text {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.body-scrollable-dropdown .loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+
+
+.body-stock-info::after {
+  content: ""; /* Add content for the ::after pseudo-element */
+  position: absolute;
+  bottom: 0;
+ 
+  width: 100%;
+
+  background-color: #ccc; /* Set the color of the divider */
+}
+
+.body-stock-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  border-radius: 80px;
+
+}
+
+
+
+.body-status-nav {
+  margin-left: auto;
+}
+.search-container-body {
+  position: relative;
+  margin-left: 3cm;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 4;
+
+}
+/* ... (previous CSS rules) */
+
+
+
+/* ... (remaining CSS rules) */

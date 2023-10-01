@@ -1,0 +1,121 @@
+.dough-card {
+  display: flex;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  background: var(--neutral-white-field, #ffffff);
+  border-radius: 8px;
+  margin-left: -.11cm; /* Move the DoughnutGraph 1 cm to the left */
+  margin-right: .21cm; /* Add a margin on the right side for consistency */
+} 
+  /* Styling for the prediction label */
+  .prediction-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .prediction-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Doughnut chart container styles */
+  .chart-section {
+    width: 100%;
+    background-color: #dddddd;/* To position the tooltip */
+
+
+  }
+  .chart-label-dough{
+    font-size: x-large;
+    font-weight: 700;
+  }
+  .doughnut-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+  }
+  
+  /* Styling for the pie chart */
+  .recharts-responsive-container {
+    max-width: 100%;
+  }
+  .chart-container-dough{
+    position: relative; /* Add a position to make the legend relative to this container */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    height: 270px;
+    width:550px;
+    background-color: #ddd;/* To position the tooltip */
+
+  }
+  /* Custom styling for the doughnut chart center label */
+  .recharts-legend-item-text {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Styling for the legends container */
+  .legends-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .legend {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .positive-legend {
+    background-color: #19a59c;
+    color: #fff;
+  }
+  
+  .neutral-legend {
+    background-color: #999;
+    color: #fff;
+  }
+  
+  .negative-legend {
+    background-color: #911f67;
+    color: #fff;
+  }
+  
+  /* Optional: Add a hover effect to the doughnut sectors */
+  .recharts-pie-sector {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .recharts-pie-sector:hover {
+    transform: scale(1.05) translate(-2%, 2%);
+  }
+  
+  /* Optional: Add a hover effect to the legends */
+  .legend:hover {
+    opacity: 0.7;
+  }
+  
+  /* Styling for the dividers */
+  .divider {
+    height: 1px;
+    background-color: #ccc;
+    border: 1px solid  #ccc;
+    margin: 10px 0;
+  }
+  

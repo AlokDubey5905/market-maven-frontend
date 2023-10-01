@@ -1,0 +1,65 @@
+/* SentimentBarChart.css */
+
+/* Card styles */
+.sentiment-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: var(--neutral-white-field, #f9f7f7);
+    padding: 16px;
+    margin-left:-16px;
+    
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    max-width: 600px;
+  }
+  
+  .sentiment-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Chart container styles */
+  .chart-section {
+    width: 100%;
+    background-color: #ddd;    border-radius: 10px;
+    
+
+  }
+  
+  .chart-container-sentiment {
+    position: relative; /* Add a position to make the legend relative to this container */
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    height: 400px;
+  }
+  
+  /* Custom styling for the legend */
+  .recharts-legend-item-text {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Styling for the dividers */
+  .divider {
+    height: 1px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+  }
+  
+  /* Optional: Add a hover effect to the bar charts */
+  .recharts-bar-rectangle {
+    cursor: pointer;
+  }
+  
+
+  
+  /* Optional: Add a hover effect to the legends */
+  .recharts-legend-item {
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .recharts-legend-item:hover {
+    opacity: 0.7;
+  }
+  

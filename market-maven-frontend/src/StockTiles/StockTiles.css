@@ -1,0 +1,92 @@
+/* App.css */
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 10px;
+}
+
+.card-tiles {
+  text-align: center;
+  display: flex;
+  border: 1px solid #59A27B;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aliceblue;
+  border-radius: 35px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 55px;
+  width: 180px;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px 2px rgba(89, 162, 123, 0.10), 0px 4px 8px 4px rgba(237, 216, 216, 0.05) inset;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.icon-card {
+  width: 40px;
+  height: 40px;
+  border-radius: 1cm;
+}
+
+.symbol-company {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.info-close {
+  display: flex;
+  align-items: center;
+}
+
+.close {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+.green {
+  color: #26890D;
+}
+
+.red {
+  color: red;
+}
+
+.head-text {
+  color: aliceblue;
+  text-align: center;
+  margin-top: -100px;
+}
+
+@media screen and (max-width: 965px) {
+  .app {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

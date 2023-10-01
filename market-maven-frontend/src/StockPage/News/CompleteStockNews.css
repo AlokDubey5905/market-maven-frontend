@@ -1,0 +1,140 @@
+.complete-news-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #292C33;
+    padding: 60px;
+    margin-top:-1rem;
+    overflow-y: auto;
+  }
+  
+  .complete-main-news-card {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 50px;
+    padding-bottom:50px;
+  }
+  
+  .complete-main-news-image {
+    width: 800px;
+    height: 350px;
+    max-height: 400px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .complete-main-news-content {
+    text-align: left;
+    color: white;
+  }
+  
+  .complete-main-news-headline {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .complete-main-news-description {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .complete-main-news-datetime {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .complete-trending-news-heading {
+    /* Set your desired styles for the "Trending News" heading */
+    margin: 30px 0;
+    font-size: 2.0rem;
+    color: white;
+    /* You can adjust the color as needed */
+  }
+  
+  .other-complete-news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:  100px;
+  }
+  
+  .complete-news-card {
+    width: calc(30% - 10px);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    background-color: #414348;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .complete-news-image {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: white;
+    object-fit: covery;
+  }
+  
+  .sentiment-dot-container {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+  }
+  
+  .sentiment-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .sentiment-dot.green {
+    background-color: #19a59c;
+    /* Green color for positive sentiment */
+  }
+  
+  .sentiment-dot.red {
+    background-color: #911f67;
+    /* Red color for negative sentiment */
+  }
+  
+  .sentiment-dot.blue {
+    background-color: #999;
+    /* Blue color for neutral sentiment */
+  }
+  
+  .sentiment-dot.gray {
+    background-color: #808080;
+    /* Gray color for other sentiments */
+  }
+  
+  .complete-news-content {
+    text-align: left;
+    color: white;
+  }
+  
+  .complete-news-headline {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .complete-news-description {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .complete-news-datetime {
+    font-size: 12px;
+    color: #666;
+  }
+  

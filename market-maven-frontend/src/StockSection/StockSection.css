@@ -1,0 +1,162 @@
+.container {
+  max-width: 1580px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading-stock {
+  color: aliceblue;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 90px;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-track {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-slide {
+  flex: 0 0 auto;
+  margin: 10px;
+  width: 300px; /* Adjust the width of the carousel items */
+  box-shadow: 0 4px 8px rgba(78, 228, 13, 0.1);
+  background: var(--neutral-white-field, #F2F2F2);
+  border-radius: 16px;
+  transition: transform 0.3s ease; /* Add a smooth transition for sliding animation */
+}
+
+.slick-slide:hover {
+  transform: translateY(-10px);
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.company-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.card-title {
+  flex: 1;
+}
+
+.card-title h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.company-symbol {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px 0;
+}
+
+/* Chart Container */
+.chart-container {
+  margin-left: 0.3cm;
+  border-radius: 8px;
+  background: var(--neutral-white, #FFF);
+  width: 12.9cm;
+}
+
+/* Data Container */
+.data-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow the data items to wrap within the container */
+}
+
+.data-item {
+  text-align: center;
+  flex: 1 0 100px; /* Let the data items take full width on smaller screens */
+  margin: 15px;
+}
+
+.data-label {
+  font-size: 12px;
+  color: #888;
+}
+
+.data-value {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.divider-vertical {
+  width: 1px;
+  height: 100%;
+  background-color: #ddd;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .slick-slide {
+    width: 250px; /* Adjust the width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slick-slide {
+    width: 80%; /* Show one item per slide on smaller screens */
+    margin: 0 auto; /* Center the slides on smaller screens */
+  }
+}
+
+/* Carousel navigation arrows (SVG icons) */
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.slick-prev {
+  display: none !important;
+}
+.next-arrow {
+  left: 100%; /* Adjust the position from the right edge */
+}
+
+.slick-arrow:hover {
+  background-color: #5ebd2a; /* Change background color on hover */
+}
+
+/* SVG Arrow Icons */
+.slick-arrow svg {
+  width: 100%;
+  height: 100%;
+  fill: white; /* Use the arrow's color as the SVG fill color */
+}
+

@@ -1,0 +1,280 @@
+/* StockPage.css */
+
+body {
+    background-color: #292C33;
+    /* Add 2cm margin from all sides */
+  }
+  .stock-details-column,
+.doughnut-chart-column,
+.prediction-column {
+  flex-grow: 1;
+}
+
+.stock-details-column {
+  width: 20%;
+}
+
+.doughnut-chart-column,
+.prediction-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Center the content vertically in the rows */
+.doughnut-chart-column .row,
+.prediction-column .row {
+  align-items: center;
+  padding: 20px; /* Add 2cm padding from all sides */
+  justify-content: center; /* Center the contents horizontally */
+}
+  .stock-page-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2cm; /* Add 2cm padding from all sides */
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px; /* Add 2cm padding from all sides */
+  }
+  
+  .stock-details-column {
+    width: 20%;
+  }
+  
+  .doughnut-chart-column,
+  .prediction-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  
+  .row {
+    padding: 10px; /* Add 2cm padding from all sides */
+  }
+  
+  /* Apply color to the prediction based on the majority sentiment */
+  #prediction {
+    font-family: Open Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  #prediction.color-negative {
+    color: #911f67; /* Color for majority negative sentiment */
+  }
+  
+  #prediction.color-positive {
+    color: #19a59c; /* Color for majority positive sentiment */
+  }
+  
+  /* Keep the "Prediction based on previous week is:" text in aliceblue color */
+  .prediction-text {
+    color: #FFF;
+
+    font-family: Open Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+
+  .split-screen {
+    display: flex;
+    width: 100%;
+    background-color: #292C33;
+  }
+  
+  /* Left Section */
+  .sector-news-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #292C33;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .sector-main-news-card {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 20px;
+  }
+  
+  .sector-main-news-image {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .sector-main-news-content {
+    text-align: left;
+    color: white;
+  }
+  
+  .sector-main-news-headline {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .sector-main-news-description {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .sector-main-news-datetime {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .analysis-trending-news-heading {
+    /* Set your desired styles for the "Trending News" heading */
+  margin-left: 1.5cm;    font-size: 2.0rem;
+    color: white;
+    padding-bottom: 30px;
+    /* You can adjust the color as needed */
+  }
+  
+  .other-sector-news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 65px;
+  }
+  
+  .sector-news-card {
+    width: calc(30% - 10px);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    background-color: #414348;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sector-news-image {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: white;
+    object-fit: covery;
+  }
+  
+  .sentiment-dot-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sentiment-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .sentiment-dot.green {
+    background-color: #19a59c;
+    /* Green color for positive sentiment */
+  }
+  
+  .sentiment-dot.red {
+    background-color: #911f67;
+    /* Red color for negative sentiment */
+  }
+  
+  .sentiment-dot.blue {
+    background-color: #999;
+    /* Blue color for neutral sentiment */
+  }
+  
+  .sentiment-dot.gray {
+    background-color: #808080;
+    /* Gray color for other sentiments */
+  }
+  
+  .sector-news-content {
+    text-align: left;
+    color: white;
+  }
+  
+  .sector-news-headline {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .sector-news-description {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .sector-news-datetime {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  /* Right Section */
+
+  
+  /* Responsive CSS */
+  
+  
+  @media screen and (max-width: 1432px) {
+    .sector-main-news-card {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .sector-main-news-card {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .sector-news-card{
+      padding: 10px;
+      width: calc(65% - 10px);
+    }
+  
+  }
+  
+  @media screen and (max-width: 768px) {
+    .split-screen {
+      flex-direction: column;
+    }
+  
+    .sector-news-section{
+      flex: 100%;
+    }
+  
+    .sector-main-news-card {
+      flex-direction: column;
+      padding-right: 10px;
+    }
+  
+    .sector-main-news-image {
+      max-height: 200px;
+    }
+  
+    .sector-news-card {
+      width: calc(65% - 10px);
+    }
+  }
+  .see-more-link{
+    margin-right:3rem ;
+    color:  #3CBFF6;
+    ;
+  }

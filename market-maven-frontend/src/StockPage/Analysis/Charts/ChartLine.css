@@ -1,0 +1,179 @@
+/*ChartLine css */
+.stock-card {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(78, 228, 13, 0.1);
+  background: var(--neutral-white-field, #f9f7f7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #ddd; */
+  border-radius: 10px;
+  height: 400px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+  .company-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+  }
+  
+  .card-title {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .status {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 0; /* Removed padding on the right */
+    border-radius: 4px;
+     /* Set the color of the entire status element to black */
+  }
+  
+  .status.increased {
+    color: #26890D;
+  }
+  
+  .status.decreased {
+    color: rgb(238, 34, 34);
+  }
+  
+  /* Close word color */
+  .status .data-value.close {
+    color: black; /* Set the text color of "Close" to black */
+  }
+  .loading-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px; /* Adjust the height as needed */
+    background-color: #f8f8f8; /* Set a background color for better contrast */
+  }
+  
+  .loading-gif img {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+  }
+  .status.increased .data-value.close {
+    color: #26890D; /* Green color for increased status */
+  }
+  
+  .status.decreased .data-value.close {
+    color: rgb(238, 34, 34); /* Red color for decreased status */
+  }
+  
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 10px 0;
+  }
+  
+  .chart-container-line{
+    position: relative; /* Add a position to make the legend relative to this container */
+    border-radius: 10px;
+    
+    border: 1px solid #ddd;
+    padding: 15px;
+    height: 370px;
+    width:580px;
+    background-color: #ddd;
+  }
+  
+  /* Updated positioning for the legend */
+  .recharts-legend-wrapper {
+    position: absolute;
+/* Adjust this value to move the legend horizontally */
+  }
+
+  .data-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0;
+  }
+  
+  .data-item {
+    flex: 1;
+    text-align: center;
+
+  }
+  .data-label {
+    font-size: 12px;
+    color: #1a1919;
+  }
+  
+  /* Updated positioning for the status */
+  .status.increased .data-value.close::after,
+  .status.decreased .data-value.close::after {
+    content: ''; /* Add a pseudo-element to serve as the triangle */
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0px; /* Adjust this value to 5cm or any other desired distance */
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+  }
+  
+  .status.increased .data-value.close::after {
+    border-bottom: 8px solid #26890D; /* Green triangle for increased status */
+  }
+  
+  .status.decreased .data-value.close::after {
+    border-top: 8px solid rgb(238, 34, 34); /* Red triangle for decreased status */
+  }
+  
+  .divider-vertical {
+    width: 1px;
+    height: 30px;
+    background-color: #ddd;
+    margin: 0 5px;
+  }
+  
+  /* Additional CSS for specific colors */
+  .data-item.high {
+    color: rgb(25, 165, 156);
+  }
+  
+  .data-item.low {
+    color: rgb(145, 39, 103);
+  }
+  
+  .data-item.open {
+    color: rgb(153, 153, 153);
+  }
+  .close-text{
+    color: #888;
+
+  }
+  .additional-info {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .highlight {
+    color: #0d0f89;
+    font-weight: bold;
+  }

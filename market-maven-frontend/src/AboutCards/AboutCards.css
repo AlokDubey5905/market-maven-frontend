@@ -1,0 +1,51 @@
+/* Cards.css */
+.about-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.about-card {
+    flex: 1;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, transition-delay 0.2s;
+    transition-delay: 0s;
+}
+
+.about-card h2 {
+    color: #007bff;
+    /* Deloitte green color */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+.about-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition-delay: 0.1s;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .about-cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-card {
+        margin: 0 0 20px;
+    }
+}

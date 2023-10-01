@@ -1,0 +1,82 @@
+/* StockDetails.css  */
+body {
+  font-family: 'Open Sans', sans-serif;
+   margin: 0;
+    padding: 0;
+
+  }
+  .body-color{
+    color: aliceblue;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 20%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  table td {
+    padding: 8px;
+    border: none; /* Remove borders from all table cells */
+  }
+  
+  table td:first-child {
+    font-weight: bold;
+  }
+  
+  .logoCell {
+    text-align: right; /* Align the logo to the right */
+  }
+  .logo-table{
+    margin-left: 65%;
+  }
+  
+  table img {
+    display: block;
+    width: 60px; /* Reduce the logo size */
+    height: 60px; /* Reduce the logo size */
+    border-radius: 50%; /* Make the logo circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a cute shadow effect */
+  }
+  
+  table a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  table a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Additional CSS for the "Name (Ticker)" cell */
+  .nameTickerCell {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .divider-table{
+    border-bottom: 1px solid #26890D; /* Add bottom border to act as a divider */
+    padding-bottom: 8px; /* Add some spacing below the divider */
+  }
+  .nameTickerCell span {
+    margin-left: 5px; /* Add spacing between name and ticker */
+  }
+  
+  /* Additional CSS for data cells */
+  .dataCell {
+    font-weight: bold;
+    width: 15%; /* Adjust the width for data cell */
+  }
+  
+  /* Align the data in the second column to the right */
+  .dataCellRightAlign {
+    text-align: right;
+  }
+  
+  /* Reduce the gap between the two columns */
+  td:nth-child(2) {
+    padding-left: 20px; /* Adjust the left padding to reduce the gap */
+  }
+  

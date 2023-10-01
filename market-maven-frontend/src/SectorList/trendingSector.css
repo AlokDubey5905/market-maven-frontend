@@ -1,0 +1,74 @@
+/* ImageGallery.css */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.gallery img {
+    width: calc(20% - 10px);
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(15, 157, 88, 0.5);
+}
+
+.sector-search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.sector-search-bar input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-icon {
+    font-size: 24px;
+    color: #777;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: calc(50% - 10px);
+    }
+}
